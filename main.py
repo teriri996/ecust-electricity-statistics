@@ -18,8 +18,8 @@ class ItemType(TypedDict):
 
 # DEBUG：开启调试模式，将 pushplus/Telegram 消息输出至 stdout
 DEBUG = os.environ.get("DEBUG", os.environ.get("debug", "")).strip()
-URL = os.environ.get("URL", "").strip()
-PUSH_PLUS_TOKEN = os.environ.get("PUSH_PLUS_TOKEN", "").strip()
+URL = "https://yktyd.ecust.edu.cn/epay/wxpage/wanxiao/eleresult;jsessionid=74C59E5113DBD069CE710CEF9D841765?sysid=1&roomid=528&areaid=3&buildid=20"
+PUSH_PLUS_TOKEN = "2a48f0f4e3d5442c84aa9c919c14dd7f"
 GITHUB_TRIGGERING_ACTOR = os.environ.get("GITHUB_TRIGGERING_ACTOR", "").strip()
 TELEGRAM_BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN", "").strip()
 if s := os.environ.get("TELEGRAM_USER_IDS"):
